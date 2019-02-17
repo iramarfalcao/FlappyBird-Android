@@ -1,12 +1,12 @@
 package com.iramarjunior.flappybird;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.widget.FrameLayout;
 
 import com.iramarjunior.engine.Game;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     private Game game;
 
@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         FrameLayout container = findViewById(R.id.container);
 
         game = new Game(this);
+        container.addView(this.game);
     }
 
     @Override
