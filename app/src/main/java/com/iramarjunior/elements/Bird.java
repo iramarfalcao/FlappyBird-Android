@@ -20,4 +20,9 @@ public class Bird {
 
         canvas.drawCircle(X, height, RAIO, RED);
     }
+
+    public void down() {
+
+        this.height += 5;
+    }
 }
